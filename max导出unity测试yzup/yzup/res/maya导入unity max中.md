@@ -46,6 +46,8 @@
 
 
 ## 结论
-### <font color = #ff99333> 结论1 ：maya中标准资源(位移旋转000 缩放111) yup zup ，导入 unity ，x轴正好相反 x轴没有旋转 </font> 
-### <font color = #ff99333> 结论2 ：maya中标准资源(位移旋转000 缩放111)，yup 导入 max 中 状态不变 x轴旋转90度 </font> 
-### <font color = #ff99333> 结论3： maya中标准资源(位移旋转000 缩放111)，zup 导入 max中 资源倾倒 x轴没有旋转 </font> 
+### <font color = #ff99333> maya中标准资源(位移旋转000 缩放111) </font> 
+
+### <font color = #ff99333> 结论1 ： yup zup 导入 unity ，x z轴形态上镜像 </font> 
+### <font color = #ff99333> 结论2 ：yup 导入 max 中 形态不变 x轴旋转90度 </font> 
+### <font color = #ff99333> 结论3：zup 导入 max中 形态改变(倒地) x轴没有旋转 </font> 

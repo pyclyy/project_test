@@ -46,6 +46,6 @@
 
 
 ## 结论
-### <font color = #ff99333> 结论1 ：max中标准资源(位移旋转000 缩放111)，导入 unity  导入maya中，x轴都有旋转 -90度 </font> 
-### <font color = #ff99333> 结论2 ：max中标准资源(位移旋转000 缩放111)，导入 unity 中 x 轴180 度镜像 y轴180镜像 </font> 
-### <font color = #ff99333> 结论3： max中标准资源(位移旋转000 缩放111)，导入 maya中 型没有变，坐标系旋转90度，x = -90</font> 
+###   <font color = #ff99333> max中标准资源(位移旋转000 缩放111) </font> 
+###  <font color = #ff99333> 结论1 ：yup zup导入 unity ，x轴都有旋转 -90度 , x y 轴向上形态镜像 </font> 
+###  <font color = #ff99333> 结论2： 导入 maya中 形态没变，x轴旋转-90</font> 
