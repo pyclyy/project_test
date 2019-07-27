@@ -1,0 +1,12 @@
+E:\B\vs_2017\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+E:\B\vs_2017\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+E:\B\vs_2017\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+E:\B\vs_2017\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+E:\B\vs_2017\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+E:\B\vs_2017\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
