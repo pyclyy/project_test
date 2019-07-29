@@ -14,18 +14,28 @@ namespace ConsoleApplication3
 {
     class Program
     {
+
+
+
+
         static void Main(string[] args)
         {
 
             // Read the file into <bits>
             // string path = "E:\\C\\work\\2019-07-00\\python_rip\\6.rip" ;
-            string files = @"E:\C\game_jie\_NinjaRipper\cao\_NinjaRipper\2019.07.18_12.26.32_Three_Kingdoms.exe_13128\test\Mesh_0211_Tex_0530_0.dds";
-            string oust = @"E:\C\game_jie\_NinjaRipper\cao\_NinjaRipper\2019.07.18_12.26.32_Three_Kingdoms.exe_13128\test";
+            string files = @"E:\C\work\2019-07-00\dds到tga测试\Tex_0366_0.dds";
+            string oust = @"D:\work\2018-08-00\tools\c\ddstotga";
 
 
             Program ib = new Program();
-            int c  = ib.dds_to_tga(files , oust);
-            Console.WriteLine(c ); 
+            //int c  = ib.dds_to_tga(files , oust);
+            //Console.WriteLine(c);
+
+
+            //ib.runexe(c, files); 
+            ib.ddsmaptotgamap(files, oust);
+
+
             //string[] c  = ib.GetRipdds(path);
             //foreach (string i in c )
             //{
@@ -36,6 +46,12 @@ namespace ConsoleApplication3
 
             Console.ReadLine();
         }
+
+
+
+
+
+
         public  string[]   GetRipdds (string  pathname )
         {
             List<string> tem = new List<string>();
@@ -54,6 +70,38 @@ namespace ConsoleApplication3
             return tem.ToArray(); 
         }
 
+        public  void  runexe( int d2432 , string absmappath   )
+        {
+
+            string JsonPathexe = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName;
+            string jsonPath = Path.GetDirectoryName(JsonPathexe);
+
+            string d24 = jsonPath+ "\\ddstotga3.exe";
+            string d32 = jsonPath+"\\ddstotga4.exe";
+            string bat = "";
+            if (d2432 ==24)
+            {
+                bat += d24 + "  " + absmappath; 
+
+            }else if (d2432 ==32)
+            {
+                bat += d32 + "  " + absmappath; 
+
+            }
+             
+            Process process = new Process();//创建进程对象  
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "cmd.exe";//设定需要执行的命令  
+            startInfo.Arguments = "/C " + bat;//“/C”表示执行完命令后马上退出  
+            startInfo.UseShellExecute = false;//不使用系统外壳程序启动 
+            startInfo.RedirectStandardInput = false;//不重定向输入  
+            startInfo.RedirectStandardOutput = true; //重定向输出  
+            startInfo.CreateNoWindow = true;//不创建窗口  
+            process.StartInfo = startInfo;
+            process.Start();
+        }
+
+
 
         /// <summary>
         /// / 该方法是通过传入的dss 来判断是 24 32 位 如果是0 就错的  
@@ -65,8 +113,11 @@ namespace ConsoleApplication3
         public  int  dds_to_tga  (string files , string oust)
         {
             string[] dds24_32 = { "R8G8B8" , "A8R8G8B8"  }; 
-            int[] dds = {24 , 32 , 0  }; 
-            string exe = @"texconv.exe";
+            int[] dds = {24 , 32 , 0  };
+            string JsonPathexe = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName;
+            string jsonPath = Path.GetDirectoryName(JsonPathexe);
+
+            string exe = jsonPath+@"\\texconv.exe";
 
             string bat = (exe + " -ft TGA  -w 20 -h 20  " +  files + "  -o  " + oust);
 
@@ -99,11 +150,21 @@ namespace ConsoleApplication3
                 }
 
             }
-            return ai; 
+            return (ai); 
 
-        } 
+        }
 
+        public void ddsmaptotgamap(string ddsmappath, string toolpath)
+        { 
+            string newdds = (toolpath + "\\tem.dds");
+            File.Copy(ddsmappath, newdds, true);
 
+            string ou = Path.GetDirectoryName(newdds); 
+            int why34 = dds_to_tga(newdds, ou);
+            //Console.WriteLine("sss" + ddsmappath);
+            runexe(why34, ddsmappath);
+
+        }
 
 
     }
