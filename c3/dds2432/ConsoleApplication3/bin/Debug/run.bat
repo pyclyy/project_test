@@ -1,1 +1,1 @@
-E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\bin\Debug\ddstotga4.exe   E:\C\work\2019-07-00\ddsµΩtga≤‚ ‘\Tex_1517_4.dds
+E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe   E:\C\work\2019-07-00\ddsµΩtga≤‚ ‘\Tex_1517_4.dds  D:\work\2018-08-00\tools\c\ddstotga

@@ -21,7 +21,8 @@ namespace whydds2432
         {
             string[] dds24_32 = { "R8G8B8", "A8R8G8B8" };
             int[] dds = { 24, 32, 0 };
-            string exe = @"texconv.exe";
+
+            string exe =  @"texconv.exe";
 
             string bat = (exe + " -ft TGA  -w 20 -h 20  " + files + "  -o  " + oust);
 
@@ -61,8 +62,9 @@ namespace whydds2432
         }
         public void runexe(int d2432, string absmappath)
         {
-            string d24 = "ddstotga3.exe";
-            string d32 = "ddstotga4.exe";
+
+            string d24 =  "ddstotga3.exe";
+            string d32 =  "ddstotga4.exe";
             string bat = "";
             if (d2432 == 24)
             {
@@ -88,12 +90,13 @@ namespace whydds2432
         }
         public void ddsmaptotgamap (string  ddsmappath , string toolpath  )
         {
-            whydds2432 di = new whydds2432();
-            string newdds = (toolpath + "\\tem.dds"); 
-            File.Copy(ddsmappath, newdds, true); 
+            string newdds = (toolpath + "\\tem.dds");
+            File.Copy(ddsmappath, newdds, true);
 
-            int  why34  =  di.dds_to_tga(newdds, newdds);
-            di.runexe(why34, ddsmappath); 
+            string ou = Path.GetDirectoryName(newdds);
+            int why34 = dds_to_tga(newdds, ou);
+            //Console.WriteLine("sss" + ddsmappath);
+            runexe(why34, ddsmappath);
 
         }
 

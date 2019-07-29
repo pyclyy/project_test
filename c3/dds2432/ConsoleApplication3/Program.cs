@@ -15,36 +15,32 @@ namespace ConsoleApplication3
     class Program
     {
 
-
-
-
         static void Main(string[] args)
         {
 
             // Read the file into <bits>
             // string path = "E:\\C\\work\\2019-07-00\\python_rip\\6.rip" ;
-            string files = @"E:\C\work\2019-07-00\dds到tga测试\Tex_0366_0.dds";
-            string oust = @"D:\work\2018-08-00\tools\c\ddstotga";
+
+
+            //string files = @"E:\C\work\2019-07-00\dds到tga测试\Tex_1513_0.dds";
+            //string oust = @"D:\work\2018-08-00\tools\c\ddstotga";
+            //bool bol = true  ; 
 
 
             Program ib = new Program();
-            //int c  = ib.dds_to_tga(files , oust);
-            //Console.WriteLine(c);
 
+
+            bool bol = bool.Parse(args[2]);
+            string files = args[0];
+            string oust = args[1];
 
             //ib.runexe(c, files); 
-            ib.ddsmaptotgamap(files, oust);
-
-
-            //string[] c  = ib.GetRipdds(path);
-            //foreach (string i in c )
-            //{
-            //    Console.WriteLine(i);
-            //}
+            ib.ddsmaptotgamap(files ,oust ,bol);
 
 
 
-            Console.ReadLine();
+
+            //Console.ReadLine();
         }
 
 
@@ -70,7 +66,7 @@ namespace ConsoleApplication3
             return tem.ToArray(); 
         }
 
-        public  void  runexe( int d2432 , string absmappath   )
+        public  string   runexe( int d2432 , string absmappath   )
         {
 
             string JsonPathexe = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName;
@@ -99,6 +95,9 @@ namespace ConsoleApplication3
             startInfo.CreateNoWindow = true;//不创建窗口  
             process.StartInfo = startInfo;
             process.Start();
+            string output = process.StandardOutput.ReadToEnd();//读取进程的输出 
+                                                               // Console.WriteLine(output+"sss");
+            return (output + "sss");
         }
 
 
@@ -154,7 +153,7 @@ namespace ConsoleApplication3
 
         }
 
-        public void ddsmaptotgamap(string ddsmappath, string toolpath)
+        public void ddsmaptotgamap(string ddsmappath, string toolpath ,bool deldds )
         { 
             string newdds = (toolpath + "\\tem.dds");
             File.Copy(ddsmappath, newdds, true);
@@ -162,7 +161,11 @@ namespace ConsoleApplication3
             string ou = Path.GetDirectoryName(newdds); 
             int why34 = dds_to_tga(newdds, ou);
             //Console.WriteLine("sss" + ddsmappath);
-            runexe(why34, ddsmappath);
+            string s =  runexe(why34, ddsmappath);
+            if (s =="sss" &&  deldds)
+            {
+                File.Delete(ddsmappath);
+            }
 
         }
 

@@ -9,4 +9,3 @@ E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\obj\Debug\ConsoleA
 E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
 E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
 E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
-E:\A\github\other\project_test\c3\dds2432\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
