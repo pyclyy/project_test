@@ -238,3 +238,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+[http]
+proxy = 127.0.0.1:12639
