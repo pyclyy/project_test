@@ -18,13 +18,16 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-           ///. string path = (@"E:\C\work\2019-07-00\贴图流程化测试\2 (2).tga");
+          // string path = (@"E:\C\work\2019-07-00\贴图流程化测试\eeee.tga");
             string path = args[0];
 
             FreeImageBitmap ne = new FreeImageBitmap(path, FREE_IMAGE_FORMAT.FIF_TARGA);
             Size b = ne.Size;
             int image_h = b.Height;
             int image_w = b.Width;
+            /// 这里抛出移除是因为会当做方块来循环， 应该是小
+
+
             // FreeImageBitmap new_tem = new FreeImageBitmap(image_w, image_h);
             Bitmap new_tem = new Bitmap(image_w, image_h);
 
@@ -40,11 +43,11 @@ namespace ConsoleApplication1
                 for (int j =0;j<image_w; j++ )
                 {
                     //Color t = ne.GetPixel(i, j); /// 优先获得高度 在高度上去处理 宽度 
-                    Color t = ne_type.GetPixel(i, j);  
+                    Color t = ne_type.GetPixel(j, i);  
                                         
                     Program pro = new Program();
                     Color  srgbcolor  =  pro.linetosrgb(t);
-                    new_tem.SetPixel(i, j, srgbcolor);
+                    new_tem.SetPixel(j, i, srgbcolor);
                     
                 }
             }
