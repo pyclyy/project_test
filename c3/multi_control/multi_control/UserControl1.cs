@@ -16,5 +16,10 @@ namespace multi_control
         {
             InitializeComponent();
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
