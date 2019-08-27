@@ -1,0 +1,28 @@
+noorsnormalthief  
+
+http://www.scriptspot.com/3ds-max/scripts/noors-normal-thief 
+
+编辑法线工具 有两个版本，本人决定第一个版本可能会更灵活 
+
+pyc_eixnormal 
+之前在网易bigworl的官方自带的工具，工具就在哪里放着美术不会用，我法线后继承到工具集合给大家使用 
+
+SetPlantsNormal 
+同时写的一个 处理工具   
+
+
+own
+ 第一个版本在这里 
+http://www.bytehazard.com/articles/vertnorm.html 
+优化版本
+
+https://gumroad.com/l/VertexNormalToolkit 
+这里做了收费版本 
+但是放出开始的版本  
+这里全工具说明  
+https://www.youtube.com/watch?v=o31PbWjFcs8
+https://gumroad.com/l/VertexNormalToolkit
+
+wnormals100 
+
+http://www.bytehazard.com/articles/wnormals.html  
