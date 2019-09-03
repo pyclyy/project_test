@@ -16,4 +16,42 @@
 
 + vertexSnap 顶点快照的开启和关闭这里处理 
 + edgeSnap GridSnap  都没有找到使用的地方 
-+ 
+
+
+>>nae = #()
+>>mapped fn  cname    a  nae = (
+>>	append nae  a.name 
+>>  
+>>)
+>>
+>>
+>>
+>>---- 一个名称处理 
+>>cname  $  nae  
+>>
+>>nae
+>>
+>>--- 可以收集一个也可以处理多个， 非常好  
+>>
+>>-- #("Sphere010")
+>>-- #("Sphere010")
+>>-- #()
+>>-- cname()
+>>-- OK
+>>-- #("Sphere001", "Sphere002", "Sphere003", "Sphere004", "Sphere009", "Sphere011", "Sphere007", "Sphere008", "Sphere010", >>"Sphere006", "Sphere005")
+>>
+>>
+>>mapped  fn sc a  c = (
+>>	if  superclassof a == GeometryClass  then (
+>>		append  c a 
+>>	)
+>>	
+>>)
+>>
+>>c= #()
+>>sc $ c 
+>>c
+
+mapped 就是厉害 
+
+

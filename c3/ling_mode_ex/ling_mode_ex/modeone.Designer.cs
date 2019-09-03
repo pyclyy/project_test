@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox1_1 = new System.Windows.Forms.TextBox();
             this.button2_1 = new System.Windows.Forms.Button();
             this.button1_1 = new System.Windows.Forms.Button();
             this.label2_1 = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@
             this.checkBox8_4 = new System.Windows.Forms.CheckBox();
             this.button7_4 = new System.Windows.Forms.Button();
             this.button8_4 = new System.Windows.Forms.Button();
-            this.textBox1_1 = new System.Windows.Forms.TextBox();
+            this.checkBox1_3 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -105,6 +106,19 @@
             this.tabPage1.Text = "多max文件输出";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // textBox1_1
+            // 
+            this.textBox1_1.AcceptsTab = true;
+            this.textBox1_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.textBox1_1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox1_1.Location = new System.Drawing.Point(112, 45);
+            this.textBox1_1.Name = "textBox1_1";
+            this.textBox1_1.Size = new System.Drawing.Size(141, 21);
+            this.textBox1_1.TabIndex = 37;
+            this.textBox1_1.TabStop = false;
+            this.textBox1_1.Text = "ling";
+            this.textBox1_1.TextChanged += new System.EventHandler(this.textBox1_1_TextChanged);
+            // 
             // button2_1
             // 
             this.button2_1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -113,7 +127,7 @@
             this.button2_1.Name = "button2_1";
             this.button2_1.Size = new System.Drawing.Size(108, 41);
             this.button2_1.TabIndex = 7;
-            this.button2_1.Text = "tounity 输出";
+            this.button2_1.Text = "使用meta输出";
             this.button2_1.UseVisualStyleBackColor = true;
             // 
             // button1_1
@@ -198,7 +212,7 @@
             this.button3_2.Name = "button3_2";
             this.button3_2.Size = new System.Drawing.Size(108, 41);
             this.button3_2.TabIndex = 27;
-            this.button3_2.Text = "tounity 输出";
+            this.button3_2.Text = "使用meta输出";
             this.button3_2.UseVisualStyleBackColor = true;
             // 
             // button4_2
@@ -306,6 +320,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.DarkGray;
+            this.tabPage3.Controls.Add(this.checkBox1_3);
             this.tabPage3.Controls.Add(this.label4_3);
             this.tabPage3.Controls.Add(this.button5_3);
             this.tabPage3.Controls.Add(this.button6_3);
@@ -336,7 +351,7 @@
             this.button5_3.Name = "button5_3";
             this.button5_3.Size = new System.Drawing.Size(108, 41);
             this.button5_3.TabIndex = 27;
-            this.button5_3.Text = "tounity 输出";
+            this.button5_3.Text = "使用meta输出";
             this.button5_3.UseVisualStyleBackColor = true;
             // 
             // button6_3
@@ -368,7 +383,7 @@
             this.checkBox6_3.AutoSize = true;
             this.checkBox6_3.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.checkBox6_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox6_3.Location = new System.Drawing.Point(36, 137);
+            this.checkBox6_3.Location = new System.Drawing.Point(36, 93);
             this.checkBox6_3.Name = "checkBox6_3";
             this.checkBox6_3.Size = new System.Drawing.Size(198, 16);
             this.checkBox6_3.TabIndex = 24;
@@ -490,7 +505,7 @@
             this.button7_4.Name = "button7_4";
             this.button7_4.Size = new System.Drawing.Size(108, 41);
             this.button7_4.TabIndex = 30;
-            this.button7_4.Text = "tounity 输出";
+            this.button7_4.Text = "使用meta输出";
             this.button7_4.UseVisualStyleBackColor = true;
             // 
             // button8_4
@@ -505,18 +520,17 @@
             this.button8_4.Text = "Ling 标准输出";
             this.button8_4.UseVisualStyleBackColor = true;
             // 
-            // textBox1_1
+            // checkBox1_3
             // 
-            this.textBox1_1.AcceptsTab = true;
-            this.textBox1_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.textBox1_1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox1_1.Location = new System.Drawing.Point(112, 45);
-            this.textBox1_1.Name = "textBox1_1";
-            this.textBox1_1.Size = new System.Drawing.Size(141, 21);
-            this.textBox1_1.TabIndex = 37;
-            this.textBox1_1.TabStop = false;
-            this.textBox1_1.Text = "ling";
-            this.textBox1_1.TextChanged += new System.EventHandler(this.textBox1_1_TextChanged);
+            this.checkBox1_3.AutoSize = true;
+            this.checkBox1_3.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.checkBox1_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.checkBox1_3.Location = new System.Drawing.Point(36, 137);
+            this.checkBox1_3.Name = "checkBox1_3";
+            this.checkBox1_3.Size = new System.Drawing.Size(114, 16);
+            this.checkBox1_3.TabIndex = 29;
+            this.checkBox1_3.Text = "输出fbx是否合并";
+            this.checkBox1_3.UseVisualStyleBackColor = true;
             // 
             // modeone
             // 
@@ -577,5 +591,6 @@
         public System.Windows.Forms.Button button7_4;
         public System.Windows.Forms.Button button8_4;
         public System.Windows.Forms.TextBox textBox1_1;
+        public System.Windows.Forms.CheckBox checkBox1_3;
     }
 }
