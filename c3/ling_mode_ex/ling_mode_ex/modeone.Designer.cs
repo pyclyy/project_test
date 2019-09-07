@@ -49,6 +49,7 @@
             this.checkBox3_2 = new System.Windows.Forms.CheckBox();
             this.checkBox4_2 = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.checkBox1_3 = new System.Windows.Forms.CheckBox();
             this.label4_3 = new System.Windows.Forms.Label();
             this.button5_3 = new System.Windows.Forms.Button();
             this.button6_3 = new System.Windows.Forms.Button();
@@ -65,7 +66,6 @@
             this.checkBox8_4 = new System.Windows.Forms.CheckBox();
             this.button7_4 = new System.Windows.Forms.Button();
             this.button8_4 = new System.Windows.Forms.Button();
-            this.checkBox1_3 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -334,6 +334,20 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "单文件多选择集合输出";
             // 
+            // checkBox1_3
+            // 
+            this.checkBox1_3.AutoSize = true;
+            this.checkBox1_3.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.checkBox1_3.Checked = true;
+            this.checkBox1_3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.checkBox1_3.Location = new System.Drawing.Point(36, 137);
+            this.checkBox1_3.Name = "checkBox1_3";
+            this.checkBox1_3.Size = new System.Drawing.Size(114, 16);
+            this.checkBox1_3.TabIndex = 29;
+            this.checkBox1_3.Text = "输出fbx是否合并";
+            this.checkBox1_3.UseVisualStyleBackColor = true;
+            // 
             // label4_3
             // 
             this.label4_3.AutoSize = true;
@@ -519,18 +533,6 @@
             this.button8_4.Tag = "";
             this.button8_4.Text = "Ling 标准输出";
             this.button8_4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1_3
-            // 
-            this.checkBox1_3.AutoSize = true;
-            this.checkBox1_3.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.checkBox1_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox1_3.Location = new System.Drawing.Point(36, 137);
-            this.checkBox1_3.Name = "checkBox1_3";
-            this.checkBox1_3.Size = new System.Drawing.Size(114, 16);
-            this.checkBox1_3.TabIndex = 29;
-            this.checkBox1_3.Text = "输出fbx是否合并";
-            this.checkBox1_3.UseVisualStyleBackColor = true;
             // 
             // modeone
             // 
