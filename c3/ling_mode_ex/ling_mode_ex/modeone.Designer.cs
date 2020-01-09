@@ -49,7 +49,6 @@
             this.checkBox3_2 = new System.Windows.Forms.CheckBox();
             this.checkBox4_2 = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.checkBox1_3 = new System.Windows.Forms.CheckBox();
             this.label4_3 = new System.Windows.Forms.Label();
             this.button5_3 = new System.Windows.Forms.Button();
             this.button6_3 = new System.Windows.Forms.Button();
@@ -66,6 +65,11 @@
             this.checkBox8_4 = new System.Windows.Forms.CheckBox();
             this.button7_4 = new System.Windows.Forms.Button();
             this.button8_4 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button3_1 = new System.Windows.Forms.Button();
+            this.textBox6_3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button7_3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -91,6 +95,8 @@
             // 
             this.tabPage1.BackColor = System.Drawing.Color.DarkGray;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage1.Controls.Add(this.button3_1);
+            this.tabPage1.Controls.Add(this.checkBox1);
             this.tabPage1.Controls.Add(this.textBox1_1);
             this.tabPage1.Controls.Add(this.button2_1);
             this.tabPage1.Controls.Add(this.button1_1);
@@ -111,12 +117,12 @@
             this.textBox1_1.AcceptsTab = true;
             this.textBox1_1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.textBox1_1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox1_1.Location = new System.Drawing.Point(112, 45);
+            this.textBox1_1.Location = new System.Drawing.Point(95, 45);
             this.textBox1_1.Name = "textBox1_1";
             this.textBox1_1.Size = new System.Drawing.Size(141, 21);
             this.textBox1_1.TabIndex = 37;
             this.textBox1_1.TabStop = false;
-            this.textBox1_1.Text = "ling";
+            this.textBox1_1.Text = "ling#";
             this.textBox1_1.TextChanged += new System.EventHandler(this.textBox1_1_TextChanged);
             // 
             // button2_1
@@ -146,12 +152,11 @@
             // 
             this.label2_1.AutoSize = true;
             this.label2_1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2_1.Location = new System.Drawing.Point(18, 276);
+            this.label2_1.Location = new System.Drawing.Point(18, 314);
             this.label2_1.Name = "label2_1";
-            this.label2_1.Size = new System.Drawing.Size(251, 72);
+            this.label2_1.Size = new System.Drawing.Size(215, 48);
             this.label2_1.TabIndex = 5;
-            this.label2_1.Text = "按照max 文件名输出。\r\n\r\n标准输出：直接输出 Z轴朝上 \r\n\r\ntounity输出：y轴朝上 物体选择90度塌陷输出\r\n(该输出是为了在unity 地形笔刷" +
-    "绘制 ) ";
+            this.label2_1.Text = "默认按照max名称输出，勾选多选择集。\r\n就会按照选择集合名称输出。\r\n标准输出：直接输出 Z轴朝上 \r\n ";
             // 
             // checkBox2_1
             // 
@@ -177,7 +182,7 @@
             // 
             this.label1_1.AutoSize = true;
             this.label1_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1_1.Location = new System.Drawing.Point(21, 48);
+            this.label1_1.Location = new System.Drawing.Point(4, 48);
             this.label1_1.Name = "label1_1";
             this.label1_1.Size = new System.Drawing.Size(83, 12);
             this.label1_1.TabIndex = 0;
@@ -320,7 +325,9 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.DarkGray;
-            this.tabPage3.Controls.Add(this.checkBox1_3);
+            this.tabPage3.Controls.Add(this.button7_3);
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.textBox6_3);
             this.tabPage3.Controls.Add(this.label4_3);
             this.tabPage3.Controls.Add(this.button5_3);
             this.tabPage3.Controls.Add(this.button6_3);
@@ -334,28 +341,14 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "单文件多选择集合输出";
             // 
-            // checkBox1_3
-            // 
-            this.checkBox1_3.AutoSize = true;
-            this.checkBox1_3.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.checkBox1_3.Checked = true;
-            this.checkBox1_3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox1_3.Location = new System.Drawing.Point(36, 137);
-            this.checkBox1_3.Name = "checkBox1_3";
-            this.checkBox1_3.Size = new System.Drawing.Size(114, 16);
-            this.checkBox1_3.TabIndex = 29;
-            this.checkBox1_3.Text = "输出fbx是否合并";
-            this.checkBox1_3.UseVisualStyleBackColor = true;
-            // 
             // label4_3
             // 
             this.label4_3.AutoSize = true;
-            this.label4_3.Location = new System.Drawing.Point(34, 35);
+            this.label4_3.Location = new System.Drawing.Point(37, 11);
             this.label4_3.Name = "label4_3";
-            this.label4_3.Size = new System.Drawing.Size(215, 36);
+            this.label4_3.Size = new System.Drawing.Size(197, 48);
             this.label4_3.TabIndex = 28;
-            this.label4_3.Text = "1.根据选择物体 找到对应的 选择集合 \r\n\r\n2. 按照选择集合输出 \r\n";
+            this.label4_3.Text = "1.根据选择集合名称输出，缺少lod \r\n  会动作补齐\r\n2. names是空输出所有的选择集合\r\nget 可以设置要输出选择集合\r\n";
             // 
             // button5_3
             // 
@@ -407,6 +400,7 @@
             // radioButton5_3
             // 
             this.radioButton5_3.AutoSize = true;
+            this.radioButton5_3.Cursor = System.Windows.Forms.Cursors.Default;
             this.radioButton5_3.Location = new System.Drawing.Point(36, 227);
             this.radioButton5_3.Name = "radioButton5_3";
             this.radioButton5_3.Size = new System.Drawing.Size(119, 16);
@@ -534,6 +528,60 @@
             this.button8_4.Text = "Ling 标准输出";
             this.button8_4.UseVisualStyleBackColor = true;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(15, 23);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(132, 16);
+            this.checkBox1.TabIndex = 38;
+            this.checkBox1.Text = "是否多选择集合输出";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // button3_1
+            // 
+            this.button3_1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3_1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3_1.Location = new System.Drawing.Point(239, 45);
+            this.button3_1.Name = "button3_1";
+            this.button3_1.Size = new System.Drawing.Size(42, 21);
+            this.button3_1.TabIndex = 39;
+            this.button3_1.Tag = "";
+            this.button3_1.Text = "get";
+            this.button3_1.UseVisualStyleBackColor = true;
+            // 
+            // textBox6_3
+            // 
+            this.textBox6_3.AcceptsTab = true;
+            this.textBox6_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.textBox6_3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox6_3.Location = new System.Drawing.Point(43, 150);
+            this.textBox6_3.Name = "textBox6_3";
+            this.textBox6_3.Size = new System.Drawing.Size(191, 21);
+            this.textBox6_3.TabIndex = 38;
+            this.textBox6_3.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "names:";
+            // 
+            // button7_3
+            // 
+            this.button7_3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button7_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button7_3.Location = new System.Drawing.Point(236, 148);
+            this.button7_3.Name = "button7_3";
+            this.button7_3.Size = new System.Drawing.Size(37, 27);
+            this.button7_3.TabIndex = 40;
+            this.button7_3.Tag = "";
+            this.button7_3.Text = "get";
+            this.button7_3.UseVisualStyleBackColor = true;
+            // 
             // modeone
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -593,6 +641,10 @@
         public System.Windows.Forms.Button button7_4;
         public System.Windows.Forms.Button button8_4;
         public System.Windows.Forms.TextBox textBox1_1;
-        public System.Windows.Forms.CheckBox checkBox1_3;
+        public System.Windows.Forms.Button button3_1;
+        public System.Windows.Forms.CheckBox checkBox1;
+        public System.Windows.Forms.Button button7_3;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox textBox6_3;
     }
 }
