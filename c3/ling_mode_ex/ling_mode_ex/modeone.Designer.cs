@@ -171,7 +171,7 @@
             // checkBox1_1
             // 
             this.checkBox1_1.AutoSize = true;
-            this.checkBox1_1.Location = new System.Drawing.Point(26, 108);
+            this.checkBox1_1.Location = new System.Drawing.Point(26, 126);
             this.checkBox1_1.Name = "checkBox1_1";
             this.checkBox1_1.Size = new System.Drawing.Size(198, 16);
             this.checkBox1_1.TabIndex = 2;
@@ -346,9 +346,9 @@
             this.label4_3.AutoSize = true;
             this.label4_3.Location = new System.Drawing.Point(37, 11);
             this.label4_3.Name = "label4_3";
-            this.label4_3.Size = new System.Drawing.Size(197, 48);
+            this.label4_3.Size = new System.Drawing.Size(197, 60);
             this.label4_3.TabIndex = 28;
-            this.label4_3.Text = "1.根据选择集合名称输出，缺少lod \r\n  会动作补齐\r\n2. names是空输出所有的选择集合\r\nget 可以设置要输出选择集合\r\n";
+            this.label4_3.Text = "1.根据选择集合名称输出，缺少lod \r\n  会自动补齐\r\n\r\n2. names是空输出所有的选择集合\r\n非空  输出选择集合\r\n";
             // 
             // button5_3
             // 
@@ -401,7 +401,7 @@
             // 
             this.radioButton5_3.AutoSize = true;
             this.radioButton5_3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radioButton5_3.Location = new System.Drawing.Point(36, 227);
+            this.radioButton5_3.Location = new System.Drawing.Point(36, 215);
             this.radioButton5_3.Name = "radioButton5_3";
             this.radioButton5_3.Size = new System.Drawing.Size(119, 16);
             this.radioButton5_3.TabIndex = 23;
@@ -531,7 +531,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(15, 23);
+            this.checkBox1.Location = new System.Drawing.Point(26, 104);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(132, 16);
             this.checkBox1.TabIndex = 38;
@@ -555,16 +555,16 @@
             this.textBox6_3.AcceptsTab = true;
             this.textBox6_3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.textBox6_3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox6_3.Location = new System.Drawing.Point(43, 150);
+            this.textBox6_3.Location = new System.Drawing.Point(12, 261);
             this.textBox6_3.Name = "textBox6_3";
-            this.textBox6_3.Size = new System.Drawing.Size(191, 21);
+            this.textBox6_3.Size = new System.Drawing.Size(222, 21);
             this.textBox6_3.TabIndex = 38;
             this.textBox6_3.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 153);
+            this.label1.Location = new System.Drawing.Point(15, 246);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 39;
@@ -574,7 +574,7 @@
             // 
             this.button7_3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button7_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7_3.Location = new System.Drawing.Point(236, 148);
+            this.button7_3.Location = new System.Drawing.Point(237, 257);
             this.button7_3.Name = "button7_3";
             this.button7_3.Size = new System.Drawing.Size(37, 27);
             this.button7_3.TabIndex = 40;
